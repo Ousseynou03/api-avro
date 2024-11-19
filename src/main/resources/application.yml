@@ -1,0 +1,46 @@
+topic:
+  name: Voc_test
+
+server:
+  port: 8089
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: 192.168.49.2:32719
+      properties:
+        # Configuration des sérializers pour les clés et valeurs
+        key.serializer: org.apache.kafka.common.serialization.StringSerializer
+        value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+        # Spécification de l'URL du Schema Registry
+        schema.registry.url: http://192.168.49.2:30081/
+        # Configuration pour la sécurité SASL_SSL
+        security.protocol: SASL_PLAINTEXT
+        sasl.mechanism: SCRAM-SHA-512
+        sasl.jaas.config: |
+          org.apache.kafka.common.security.scram.ScramLoginModule required
+          username="admin"
+          password="vdYfhWTQS86Y9JmAGjKgYi0pWYWRfuus";
+#spring:
+#  kafka:
+#    producer:
+#      bootstrap-servers: https://my-cluster-kafka-bootstrap-kafka-dev.apps.ocp-pprd.inwi.cloud:443
+#      properties:
+#        # Configuration des sérializers pour les clés et valeurs
+#        key.serializer: org.apache.kafka.common.serialization.StringSerializer
+#        value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+#        # Spécification de l'URL du Schema Registry
+#        schema.registry.url: https://schema-registry-kafka-dev.apps.ocp-pprd.inwi.cloud:443
+#        # Configuration du TrustStore pour le Schema Registry
+#        schema.registry.ssl.truststore.location: /home/othmane/Documents/Projet Inwi Kafka K8s/Deployment-env-dev/key-schema-registry/truststore.jks
+#        schema.registry.ssl.truststore.password: password
+#        # Configuration pour la sécurité SASL_SSL
+#        security.protocol: SASL_SSL
+#        sasl.mechanism: SCRAM-SHA-512
+#        sasl.jaas.config: |
+#          org.apache.kafka.common.security.scram.ScramLoginModule required
+#          username="admin"
+#          password="TA8plEMxl2jtSlbH21dCl6JUQiK8N0yJ";
+#        # Spécification du truststore pour SSL (pour Kafka)
+#        ssl.truststore.location: /home/othmane/Documents/Projet Inwi Kafka K8s/Deployment-env-dev/truststore.jks
+#        ssl.truststore.password: password

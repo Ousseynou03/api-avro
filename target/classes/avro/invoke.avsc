@@ -1,0 +1,231 @@
+{
+  "namespace": "com.javatechie.dto",
+  "type": "record",
+  "name": "Invoke",
+  "fields": [
+    {
+      "name": "GSW_PHONE",
+      "type": "string"
+    },
+    {
+      "name": "GSW_AGENT_REQ_TYPE",
+      "type": "string"
+    },
+    {
+      "name": "GSW_CALLING_LIST",
+      "type": "string"
+    },
+    {
+      "name": "GSW_TZ_NAME",
+      "type": "string"
+    },
+    {
+      "name": "GSW_CAMPAIGN_NAME",
+      "type": "string"
+    },
+    {
+      "name": "GSW_FROM",
+      "type": "string"
+    },
+    {
+      "name": "GSW_UNTIL",
+      "type": "string"
+    },
+    {
+      "name": "IDENTIFIANT_SURVEIL",
+      "type": "string"
+    },
+    {
+      "name": "NBR_QUESTIONS",
+      "type": "string"
+    },
+    {
+      "name": "LNG_SURVEIL",
+      "type": "string"
+    },
+    {
+      "name": "MSG_ACCEUIL",
+      "type": "string"
+    },
+    {
+      "name": "MSG_CONCLUSION",
+      "type": "string"
+    },
+    {
+      "name": "IDENTIFIANT_QX1",
+      "type": "string"
+    },
+    {
+      "name": "NBR_CHOIX_Q1",
+      "type": "string"
+    },
+    {
+      "name": "IDENTIFIANT_QX2",
+      "type": "string"
+    },
+    {
+      "name": "NBR_CHOIX_Q2",
+      "type": "string"
+    },
+    {
+      "name": "IDENTIFIANT_QX3",
+      "type": "string"
+    },
+    {
+      "name": "NBR_CHOIX_Q3",
+      "type": "string"
+    },
+    {
+      "name": "IDENTIFIANT_QX4",
+      "type": "string"
+    },
+    {
+      "name": "NBR_CHOIX_Q4",
+      "type": "string"
+    },
+    {
+      "name": "IDENTIFIANT_QX5",
+      "type": "string"
+    },
+    {
+      "name": "NBR_CHOIX_Q5",
+      "type": "string"
+    },
+    {
+      "name": "IDENTIFIANT_QX6",
+      "type": "string"
+    },
+    {
+      "name": "NBR_CHOIX_Q6",
+      "type": "string"
+    },
+    {
+      "name": "IDENTIFIANT_QX7",
+      "type": "string"
+    },
+    {
+      "name": "NBR_CHOIX_Q7",
+      "type": "string"
+    },
+    {
+      "name": "externalDataReference",
+      "type": "string"
+    },
+    {
+      "name": "recipientEmail",
+      "type": "string"
+    },
+    {
+      "name": "distributionChannel",
+      "type": "string"
+    },
+    {
+      "name": "XMContactID",
+      "type": "string"
+    },
+    {
+      "name": "canal_interaction_client",
+      "type": "string"
+    },
+    {
+      "name": "code_distributeur",
+      "type": "string"
+    },
+    {
+      "name": "code_pdv",
+      "type": "string"
+    },
+    {
+      "name": "id_commande",
+      "type": "string"
+    },
+    {
+      "name": "id_action",
+      "type": "string"
+    },
+    {
+      "name": "id_demande_identification",
+      "type": "string"
+    },
+    {
+      "name": "id_demande_resiliation",
+      "type": "string"
+    },
+    {
+      "name": "id_case",
+      "type": "string"
+    },
+    {
+      "name": "id_user_interaction",
+      "type": "string"
+    },
+    {
+      "name": "statut_case",
+      "type": "string"
+    },
+    {
+      "name": "interaction_client",
+      "type": "string"
+    },
+    {
+      "name": "numero_appelant",
+      "type": "string"
+    },
+    {
+      "name": "numero_client",
+      "type": "string"
+    },
+    {
+      "name": "numero_contact_client",
+      "type": "string"
+    },
+    {
+      "name": "offre",
+      "type": "string"
+    },
+    {
+      "name": "ville_partenaire",
+      "type": "string"
+    },
+    {
+      "name": "prestataire",
+      "type": "string"
+    },
+    {
+      "name": "id_profil",
+      "type": "string"
+    },
+    {
+      "name": "source_contact",
+      "type": "string"
+    },
+    {
+      "name": "type_interaction_crm",
+      "type": "string"
+    },
+    {
+      "name": "type_offre",
+      "type": "string"
+    },
+    {
+      "name": "date_interaction_crm",
+      "type": "string"
+    },
+    {
+      "name": "id_client",
+      "type": "string"
+    },
+    {
+      "name": "region_partenaire",
+      "type": "string"
+    },
+    {
+      "name": "ancienete_ligne",
+      "type": "string"
+    },
+    {
+      "name": "login_rvr",
+      "type": "string"
+    }
+  ]
+}
